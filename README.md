@@ -1,48 +1,35 @@
+
 # NFT Marketplace
 
-## Technology Stack & Tools
-
-- Solidity (Writing Smart Contract)
-- Javascript (React & Testing)
-- [Ethers](https://docs.ethers.io/v5/) (Blockchain Interaction)
-- [Hardhat](https://hardhat.org/) (Development Framework)
-- [Ipfs](https://ipfs.io/) (Metadata storage)
-- [React routers](https://v5.reactrouter.com/) (Navigational components)
-
-## Requirements For Initial Setup
-- Install [NodeJS](https://nodejs.org/en/), should work with any node version below 16.5.0
-- Install [Hardhat](https://hardhat.org/)
-
-## Setting Up
-### 1. Clone/Download the Repository
-
-### 2. Install Dependencies:
-```
-$ cd nft_marketplace
-$ npm install
-```
-### 3. Boot up local development blockchain
-```
-$ cd nft_marketplace
-$ npx hardhat node
-```
-
-### 4. Connect development blockchain accounts to Metamask
-- Copy private key of the addresses and import to Metamask
-- Connect your metamask to hardhat blockchain, network 127.0.0.1:8545.
-- If you have not added hardhat to the list of networks on your metamask, open up a browser, click the fox icon, then click the top center dropdown button that lists all the available networks then click add networks. A form should pop up. For the "Network Name" field enter "Hardhat". For the "New RPC URL" field enter "http://127.0.0.1:8545". For the chain ID enter "31337". Then click save.  
+This is a decentralized appilcation (Dapp) in which user can create,purchase Nfts 
 
 
-### 5. Migrate Smart Contracts
-`npx hardhat run src/backend/scripts/deploy.js --network localhost`
+## Demo
 
-### 6. Run Tests
-`$ npx hardhat test`
+https://nft-marketplace-kappa-eight.vercel.app/
 
-### 7. Launch Frontend
-`$ npm run start`
 
-License
-----
-MIT
+## Features
+
+- User can create Nft by going to create in Navbar
+- User can list its purchased items
+- User can sell its nft
+
+## Tech Stack
+For frontend React is used
+
+On the Web3 side, the contract is written in Solidity and compiled deployed using hardhat. 
+ 
+For interaction with frontend ether.js library is used
+## Limitations
+
+- The most prominent limitation of this Nft Marketplace system is that it's proper functioning is heavily dependent on how it's going to be interacted with. The buttons are not turned off (i.e. made un-clickable) at any moment. So, if a participant decides to just go ahead and randomly start clicking the buttons in between transactions, the application is mostly likely going to report an error or even worse, it may crash. Therefore, patiently wait for the transaction to complete and the updates to appear on screen
+
+
+
+
+ 
+## 🔗 Connect with me
+[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/shubham-garg-6232181b8/)
+
 
